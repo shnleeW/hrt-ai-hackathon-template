@@ -27,9 +27,6 @@
         "github.copilot.enable": { "*": false },
         "workbench.startupEditor": "none"
       }
-    },
-    "codespaces": {
-      "openFiles": ["README.md"]
     }
   }
 }
