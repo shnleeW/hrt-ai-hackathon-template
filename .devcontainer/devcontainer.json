@@ -20,8 +20,13 @@
         "workbench.editorAssociations": {
           "*.csv": "gc-excelviewer-csv-editor"
         },
-        "claudeCode.initialPermissionMode": "bypassPermissions"
+        "claudeCode.initialPermissionMode": "bypassPermissions",
+        "chat.commandCenter.enabled": false,
+        "github.copilot.enable": { "*": false }
       }
+    },
+    "codespaces": {
+      "openFiles": ["WELCOME.md"]
     }
   }
 }
