@@ -1,49 +1,29 @@
-# 🎉 HRT AI Hackathon Template
+# 🌍 World Clock Monitor
 
-A GitHub Codespace template for the Hospitality, Recreation, and Tourism (HRT) Applied Research Hackathon. Build a working Streamlit prototype with Claude — no coding experience required.
+A live dashboard that displays the current time across multiple cities around the world, all in one place.
 
-## Getting Started
+## What It Does
 
-1. Click **Code** → **Create Codespace on main**
-2. Wait for the environment to set up (1~5 min). The terminal will tell you when everything is ready.
-3. Click the **Claude** (orange star) icon at the top right corner
-4. Sign in with your **Claude Team** account
-5. Tell Claude what you want to build! For example:
-   > "Build a dashboard that shows hotel occupancy by city."
+- **Live clock cards** — Shows the current time, date, and UTC offset for 12 major global cities in a clean, easy-to-read card grid
+- **Customizable city list** — Add any city from hundreds of available timezones or remove cities you don't need, with a one-click reset to defaults
+- **Auto-refresh mode** — Toggle automatic page refresh every 60 seconds to keep all clocks up to date without reloading manually
 
-## Claude Commands
+## How to Use
 
-Type these in the Claude Code chat at any time:
+1. **Open the app** — The dashboard loads with 12 pre-selected cities (New York, London, Tokyo, Sydney, and more)
+2. **Read the clocks** — Each card shows the city name, current local time, today's date, and its UTC offset
+3. **Add a city** — Open the sidebar on the left, type a city name, choose its timezone from the dropdown, and click "Add City"
+4. **Remove a city** — In the sidebar, select the city you want to remove from the dropdown and click "Remove City"
+5. **Reset** — Click "Reset to Defaults" in the sidebar to restore the original 12 cities
+6. **Keep it live** — Toggle "Auto-refresh" in the sidebar to have the page update automatically every 60 seconds
 
-| Command | What it does |
-|---------|-------------|
-| `/run` | Start your app and give you a clickable link to view it |
-| `/checkpoint` | Save your current progress |
-| `/back-to-checkpoint` | Restore to your last saved checkpoint |
-| `/restart` | Reset everything back to the very beginning |
-| `/write-readme` | Generate a README based on your current app |
-| `/push` | Publish your project to your own GitHub for your portfolio |
-| `/handoff` | Write a session summary to pick up later |
-| `/resume` | Load the previous session summary |
+## Data
 
-## What's Inside
+This app does not use any external datasets. All times are calculated in real time from your system clock using standard timezone definitions (IANA timezone database via the `pytz` library).
 
-| File / Folder | Purpose |
-|---------------|---------|
-| `app.py` | Your Streamlit app — Claude writes all code here |
-| `CLAUDE.md` | Instructions that guide Claude's behavior |
-| `requirements.txt` | Python dependencies (Streamlit, Pandas) |
-| `data/` | Place your own datasets here (CSV, etc.) |
-| `data_ai/` | Claude saves any generated or crawled data here |
+## Built With
 
-## Uploading Your Own Data
-
-1. In the left sidebar, right-click the `data/` folder
-2. Select **Upload...**
-3. Choose your file
-
-CSV files will automatically open as a table when you click them.
-
----
-
-**Have fun building!** 🚀
+- [Streamlit](https://streamlit.io) — Web app framework
+- [Pandas](https://pandas.pydata.org) — Data table display
+- [pytz](https://pythonhosted.org/pytz/) — Timezone conversion
+- [datetime](https://docs.python.org/3/library/datetime.html) — Python standard library for time handling
